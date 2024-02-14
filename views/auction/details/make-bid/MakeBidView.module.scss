@@ -1,0 +1,15 @@
+@use 'src/resources/styles/variables';
+
+.button {
+  width: 150px;
+  font-weight: 500;
+}
+
+.viewTransaction {
+  color: variables.$primaryColor;
+
+  &:hover {
+    color: variables.$primaryColor;
+    opacity: 0.8;
+  }
+}

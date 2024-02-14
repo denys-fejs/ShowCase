@@ -1,0 +1,52 @@
+@use 'src/resources/styles/variables';
+.table {
+  margin: 24px 0;
+  font-weight: 300!important;
+
+  :global {
+    .ant-pagination-total-text {
+      color: variables.$mainDarkColor;
+      font-weight: 300;
+    }
+
+    .ant-pagination-item {
+      background-color: transparent;
+      border: none;
+
+      a {
+        color: variables.$primaryColor;
+      }
+    }
+
+    .ant-pagination-item-active a {
+      color: variables.$mainDarkColor!important;
+    }
+
+    .ant-pagination-item:hover a {
+      color: variables.$primaryColor;
+      opacity: 0.5;
+    }
+
+    .ant-pagination-item-link {
+      background-color: transparent;
+      border: none;
+      .anticon {
+        color: variables.$primaryColor;
+      }
+      &:hover .anticon {
+        opacity: 0.5;
+      }
+    }
+
+    .ant-pagination-disabled .ant-pagination-item-link {
+      .anticon {
+        cursor: not-allowed;
+        color: rgba(variables.$primaryColor, 0.5);
+      }
+    }
+  }
+}
+
+.emptyAction {
+  height: 40px;
+}

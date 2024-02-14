@@ -1,0 +1,16 @@
+@use "src/resources/styles/variables";
+
+.button {
+  min-width: 100px;
+  width: auto;
+  height: 40px;
+  box-shadow: none;
+  margin: 0 8px;
+}
+
+.description {
+  font-size: variables.$fontSizeSm;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 10px 0 20px 0;
+}

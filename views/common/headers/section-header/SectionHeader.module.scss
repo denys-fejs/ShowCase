@@ -1,0 +1,26 @@
+@use 'src/resources/styles/variables';
+
+.sectionHeaderWrapper {
+  margin-bottom: 24px;
+}
+
+.mainTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+
+  .leftAlign {
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .sortingContainer {
+    display: flex;
+
+    .sortingLabel {
+      color: rgba(variables.$mainDarkColor, 0.6);
+      line-height: 50px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use 'src/resources/styles/variables';
+
+.buttonMore {
+  background: transparent;
+  border: none;
+  color: variables.$primaryColor;
+  font-size: variables.$fontSizeSm;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+  text-align: center;
+  vertical-align: middle;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border: none;
+    background: transparent;
+    color: variables.$primaryColor;
+    outline: none;
+  }
+}

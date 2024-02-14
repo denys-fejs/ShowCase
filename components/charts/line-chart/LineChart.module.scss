@@ -1,0 +1,16 @@
+@use 'src/resources/styles/variables';
+
+.chart {
+  width: 100%;
+  border-left: 1px solid rgba(variables.$primaryColor, 0.2);
+
+  svg {
+      rect {
+        fill-opacity: 0.2!important;
+      }
+
+    defs + g > rect {
+      fill-opacity: 0!important;
+    }
+  }
+}

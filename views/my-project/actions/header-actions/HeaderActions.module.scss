@@ -1,0 +1,138 @@
+@use "src/resources/styles/variables";
+
+.mainButtons {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  .purchaseButton {
+    height: 40px;
+    width: auto;
+    margin: 0 16px;
+  }
+
+  .auctionButton {
+    display: flex;
+    .icon {
+      display: flex;
+      padding: 0 3px 0 3px;
+      span {
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+}
+
+.pendingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .waitingButton[disabled] {
+    height: 40px;
+    width: auto;
+    background-color: transparent;
+    border: 1px solid variables.$primaryColor;
+    color: variables.$primaryColor;
+    box-shadow: none;
+    font-size: variables.$fontSizeSm;
+    font-weight: bold;
+    text-transform: none!important;
+    margin-bottom: 16px;
+    align-self: center;
+
+    &:hover,
+    &:focus {
+      border: 1px solid variables.$primaryColor;
+      color: variables.$primaryColor;
+    }
+  }
+
+  .waitNotification {
+    display: block;
+    text-align: center;
+    color: variables.$mainDarkColor;
+    font-size: variables.$fontSizeSm;
+    line-height: 20px;
+  }
+}
+
+
+.continueButton {
+  height: 40px;
+  width: 160px;
+  box-shadow: none;
+}
+
+.rejectedContainer {
+  padding: 16px;
+  width: 620px;
+  border-radius: 8px;
+  background: variables.$mainLightColor;
+  box-shadow: 0 6px 36px rgba(16, 24, 32, 0.06);
+  margin: 0 auto;
+
+  .rejectionTitle {
+    color: variables.$mainDarkColor;
+    font-size: variables.$biggerFontSize;
+    font-weight: normal;
+    line-height: 24px;
+  }
+
+  .rejectionContent {
+    color: variables.$mainDarkColor;
+    font-size: variables.$fontSizeSm;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 10px 0 20px 0;
+  }
+
+  .rejectionButtonsBox {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .rollbackButton {
+    display: block;
+    height: 40px;
+    width: auto;
+    background-color: rgba(variables.$primaryColor, 0.24);
+    color: variables.$primaryColor;
+    backdrop-filter: blur(20px);
+    box-shadow: none;
+  }
+
+  .editProjectButton {
+    display: block;
+    width: 160px;
+    height: 40px;
+    text-transform: none;
+    filter: drop-shadow(0px 8px 22px rgba(107, 187, 174, 0.3));
+  }
+}
+
+.auditAddDocsButton {
+  width: 236px;
+  height: 40px;
+  color: variables.$mainLightColor;
+  text-transform: none;
+}
+
+.auditEditButton {
+  width: 160px;
+  height: 40px;
+  margin: 0 8px;
+  color: variables.$mainLightColor;
+  backdrop-filter: blur(20px);
+  text-transform: none;
+}
+
+.mainButton {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
+  margin: 0 8px;
+}

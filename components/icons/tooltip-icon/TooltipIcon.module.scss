@@ -1,0 +1,25 @@
+@use "src/resources/styles/variables";
+
+.icon {
+
+  :global {
+    span.anticon {
+      display: inline-flex!important;
+      margin-left: 12px;
+    }
+  }
+  img {
+    display: inline;
+  }
+}
+
+:global(.ant-tooltip-inner) {
+  background: variables.$mainLightColor;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  color: variables.$mainDarkColor;
+  backdrop-filter: blur(20px);
+  font-size: variables.$fontSizeXs;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+}

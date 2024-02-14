@@ -1,0 +1,13 @@
+.header {
+  padding: 28px 48px 14px 24px;
+  z-index: 1;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+
+  div:last-child {
+    margin-right: 0;
+  }
+}

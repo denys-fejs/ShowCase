@@ -1,0 +1,104 @@
+@use 'src/resources/styles/variables';
+
+.search {
+  align-items: center;
+  display: flex;
+  :global {
+    .ant-select-auto-complete {
+      color: variables.$lightTextColor;
+      font-size: variables.$fontSizeSm;
+      cursor: pointer;
+      padding: 8px 12px;
+      backdrop-filter: blur(30px);
+      border-radius: 8px;
+      height: 48px !important;
+      width: 328px !important;
+      box-shadow: 0 0 20px rgba(variables.$mainDarkColor, 0.06) !important;
+      background-color: variables.$mainLightColor;
+    }
+
+    .ant-select-selector {
+      background-color: transparent !important;
+      border: none !important;
+      display: flex;
+      align-items: center;
+      box-shadow: none !important;
+      padding: 0 0 0 35px !important;
+    }
+
+    .ant-select-selection-search {
+      left: 40px !important;
+    }
+
+    .ant-select-selection-search-input,
+    .ant-select-selection-placeholder {
+      font-size: variables.$subtitle1FontSize;
+      color: variables.$mainDarkColor;
+      margin: 0 12px 0 4px;
+      line-height: 24px !important;
+      letter-spacing: 0.15px;
+      margin-top: 2px !important;
+      font-weight: 300;
+    }
+
+    .ant-select-selection-placeholder {
+      color: rgba(variables.$mainDarkColor, 0.5);
+    }
+  }
+}
+
+.iconWrapper {
+  position: absolute;
+  z-index: 1;
+  padding-left: 20px;
+
+  img {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.wide {
+  width: 230px;
+  height: 56px;
+  color: variables.$mainDarkColor;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  align-items: center;
+  padding-left: 16px;
+
+  div {
+    display: inline-block;
+    font-size: variables.$fontSizeMd;
+    letter-spacing: 0.15px;
+  }
+}
+
+.small {
+
+  :global {
+    .ant-select-auto-complete {
+      padding: 4px 10px;
+      height: 38px !important;
+    }
+  }
+}
+
+.middle {
+  :global {
+    .ant-select-auto-complete {
+      padding: 8px 12px;
+      height: 48px !important;
+    }
+  }
+}
+
+.large {
+  :global {
+    .ant-select-auto-complete {
+      padding: 12px 12px;
+      height: 56px !important;
+    }
+  }
+}

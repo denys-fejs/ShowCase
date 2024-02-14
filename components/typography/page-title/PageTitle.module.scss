@@ -1,0 +1,6 @@
+@use 'src/resources/styles/variables';
+
+.pageTitle {
+  color: variables.$primaryColor;
+  text-align: center;
+}

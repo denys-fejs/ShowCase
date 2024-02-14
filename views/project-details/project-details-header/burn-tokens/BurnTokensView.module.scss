@@ -1,0 +1,34 @@
+@use "src/resources/styles/variables";
+
+.available {
+  font-size: variables.$fontSizeMd;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.availableAmount {
+  color: variables.$primaryColor;
+  font-size: variables.$fontSizeMd;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.divider {
+  margin: 0 6px !important;
+  height: 24px !important;
+  border-color: variables.$inputBgColor !important;
+}
+
+.highlighted {
+  color: variables.$primaryColor;
+  cursor: pointer;
+}
+
+.viewTransaction {
+  color: variables.$primaryColor;
+
+  &:hover {
+    color: variables.$primaryColor;
+    opacity: 0.8;
+  }
+}

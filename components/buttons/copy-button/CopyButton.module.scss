@@ -1,0 +1,30 @@
+@use "src/resources/styles/variables";
+
+.copyButton {
+  display: inline-block;
+  font-size: variables.$fontSizeSm;
+  color: variables.$lightTextColor3;
+  cursor: pointer;
+  width: auto;
+}
+
+.tooltip {
+  padding: 0;
+  margin: 0;
+  :global {
+    .ant-tooltip-inner {
+      padding: 2px 8px;
+      min-height: 24px;
+      background-color: rgba(variables.$mainLightColor, 0.4);
+      backdrop-filter: blur(37px);
+    }
+  }
+}
+
+.textarea {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}

@@ -1,0 +1,10 @@
+@use 'src/resources/styles/variables';
+
+.title {
+  margin-bottom: 24px;
+
+  h2 {
+    font-size: variables.$fontSizeLg;
+    text-align: left;
+  }
+}

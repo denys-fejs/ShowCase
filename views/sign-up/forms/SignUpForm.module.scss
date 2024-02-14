@@ -1,0 +1,16 @@
+.dividerMargin {
+  margin-top: -12px!important;
+}
+
+.signUpBaseForm {
+  img {
+    // makes svg white
+    filter: invert(100%);
+  }
+}
+
+.metamask {
+  img {
+    filter: none;
+  }
+}

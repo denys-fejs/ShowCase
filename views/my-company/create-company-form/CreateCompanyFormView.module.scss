@@ -1,0 +1,23 @@
+@use "src/resources/styles/variables";
+
+.rejectedContainer {
+  padding: 16px;
+  background: rgba(variables.$mainLightColor, 0.8);
+  box-shadow: 0px 6px 36px rgba(16, 24, 32, 0.06);
+  border-radius: 4px;
+  margin-bottom: 20px;
+
+  .rejectionTitle {
+    color: variables.$mainDarkColor;
+    font-size: variables.$biggerFontSize;
+    line-height: 24px;
+  }
+
+  .rejectionContent {
+    color: variables.$mainDarkColor;
+    font-size: variables.$fontSizeSm;
+    line-height: 20px;
+    font-weight: 300;
+    margin: 10px 0 20px 0;
+  }
+}

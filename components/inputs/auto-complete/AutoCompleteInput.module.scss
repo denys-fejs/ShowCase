@@ -1,0 +1,58 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  align-items: center;
+  display: flex;
+  :global {
+    .ant-select-auto-complete {
+      width: 230px;
+      height: 56px;
+      color: variables.$lightTextColor;
+      font-size: variables.$fontSizeSm;
+      cursor: pointer;
+      padding: 8px 12px 8px 16px;
+      backdrop-filter: blur(30px);
+      border-radius: 8px;
+      display: flex;
+    }
+
+    .ant-select-selector {
+      background-color: inherit !important;
+      border: none !important;
+      display: flex;
+      align-items: center;
+      box-shadow: none !important;
+      padding: 0 0 0 25px !important;
+    }
+
+    .ant-select-selection-search {
+      left: 30px !important;
+    }
+
+    .ant-select-selection-search-input,
+    .ant-select-selection-placeholder {
+      font-size: variables.$fontSizeMd;
+      margin: 0 12px 0 4px;
+      line-height: 24px !important;
+      letter-spacing: 0.15px;
+      font-weight: bold;
+      margin-top: 2px !important;
+    }
+  }
+}
+
+.autoComplete {
+  align-items: center;
+  display: flex;
+}
+
+.iconWrapper {
+  position: absolute;
+  z-index: 1;
+  padding-left: 16px;
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}

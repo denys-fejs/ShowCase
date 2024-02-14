@@ -1,0 +1,46 @@
+@use 'src/resources/styles/variables';
+.searchTextInput {
+  width: 250px;
+  background: transparent!important;
+  font-size: 16px!important;
+}
+.input {
+  width: 250px;
+  margin-right: 0 !important;
+  input {
+    font-weight: 300!important;
+  }
+
+  :global {
+    .ant-select-auto-complete {
+      background: rgba(variables.$mainLightColor, 0.3)
+    }
+    .ant-select-selection-placeholder {
+      color: rgba(variables.$mainDarkColor, 0.8) !important;
+      font-weight: 300;
+    }
+
+    .ant-select-selection-item {
+      color: variables.$mainDarkColor;
+      font-weight: 300;
+    }
+    .ant-select-selection-overflow-item {
+      color: variables.$mainDarkColor;
+      font-weight: 400;
+    }
+
+    img {
+      // makes svg green
+      z-index: 2;
+      filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+    }
+  }
+}
+
+.numberInput {
+  width: 250px;
+  padding: 14px;
+  height: 54px;
+  border-radius: 6px;
+  font-weight: 300!important;
+}

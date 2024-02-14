@@ -1,0 +1,106 @@
+@use "src/resources/styles/variables";
+.projectCountry {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    .flag {
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+    }
+    span {
+        line-height: 24px;
+    }
+}
+
+.roundCoverImg {
+    width: 120px;
+    height: 120px;
+    margin: 16px auto;
+    border-radius: 50%;
+    display: flex;
+}
+
+.countrySubtitle {
+    margin: 30px 10px 20px 10px;
+    h2 {
+        line-height: 40px;
+    }
+    h3 {
+        color: variables.$mainDarkColor;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+    }
+}
+
+.mainButtons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    .auctionButton {
+        display: flex;
+        .icon {
+            display: flex;
+            padding: 0 3px 0 3px;
+            span {
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+    margin: 30px 10px 20px 10px;
+    h2 {
+        line-height: 40px;
+    }
+    h3 {
+        color: variables.$mainDarkColor;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        margin-bottom: 0 !important;
+    }
+}
+
+.burnButton {
+    width: 88px;
+    background-color: variables.$yellowBurnedColorLight;
+    &:focus,
+    &:hover {
+        color: variables.$mainLightColor;
+        background-color: variables.$yellowBurnedColorLight;
+        box-shadow: 0px 8px 22px rgba(255, 202, 122, 0.3);
+    }
+}
+
+.favoriteButton {
+    margin: 0 8px;
+}
+
+.mainButton {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
+    margin: 0 8px;
+}
+
+.purchaseButton {
+    height: 40px;
+    width: auto;
+    margin: 0 16px;
+    border-radius: 4px;
+}
+
+.burnButton {
+    width: 88px;
+    background-color: variables.$yellowBurnedColorLight;
+    &:focus,
+    &:hover {
+        color: variables.$mainLightColor;
+        background-color: variables.$yellowBurnedColorLight;
+        box-shadow: 0px 8px 22px rgba(255, 202, 122, 0.3);
+    }
+}
+
+.favoriteButton {
+    margin: 0 8px;
+}

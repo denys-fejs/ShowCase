@@ -1,0 +1,17 @@
+@use 'src/resources/styles/variables';
+
+.accountCard {
+  width: 280px;
+  background: rgba(variables.$mainLightColor, 0.8);
+  backdrop-filter: blur(37px);
+  border: none;
+  border-radius: 8px;
+
+
+  :global(.ant-card-body) {
+    padding: 24px 0;
+  }
+  :global(.ant-menu.ant-menu-dark) {
+    background: transparent;
+  }
+}

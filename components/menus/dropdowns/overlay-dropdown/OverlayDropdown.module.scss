@@ -1,0 +1,56 @@
+@use 'src/resources/styles/variables';
+
+.dropdown {
+  color: variables.$mainDarkColor;
+  font-size: variables.$fontSizeSm;
+  cursor: pointer;
+  padding: 8px 12px;
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  height: 40px;
+
+  span {
+    display: inline-block;
+    font-size: variables.$fontSizeLg;
+  }
+}
+
+.arrow {
+  color: variables.$lightTextColor3;
+  font-size: variables.$fontSizeXxs !important;
+  margin-left: 6px;
+
+  svg {
+    fill: black;
+  }
+}
+
+.flexContainer {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 12px;
+}
+
+.dropdownWrapper {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  background: variables.$mainLightColor;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.2;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

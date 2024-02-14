@@ -1,0 +1,41 @@
+@use 'src/resources/styles/variables';
+
+.button {
+  width: auto;
+  min-width: 82px;
+  height: 32px;
+  padding: 5px 12px;
+  background-color: transparent;
+  color: variables.$primaryColor;
+  border: 1px solid variables.$primaryColor;
+  border-radius: 4px;
+  font-size: variables.$fontSizeSm;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  transition: all 0.3ms;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: rgba(variables.$primaryColor, 0.3);
+    border-color: variables.$primaryColor;
+    color: variables.$primaryColor;
+    backdrop-filter: blur(20px);
+    transition: all 0.3ms;
+  }
+}
+
+.active {
+  background-color: variables.$primaryColor;
+  color: variables.$mainLightColor;
+  font-weight: bold;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: variables.$primaryColor;
+    color: variables.$mainLightColor;
+    font-weight: bold;
+    border: none;
+  }
+}

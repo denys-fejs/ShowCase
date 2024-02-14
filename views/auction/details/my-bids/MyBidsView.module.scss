@@ -1,0 +1,100 @@
+@use 'src/resources/styles/variables';
+
+.myBidsInfo {
+  height: inherit;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(37px) !important;
+  border-radius: 4px;
+  padding: 22px 0 22px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+
+  h1 {
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .info {
+    margin-bottom: 25px;
+
+    .bids,
+    .totalAmount,
+    .winAmount,
+    .totalBidsPrice,
+    .winningBidsPrice {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 42px;
+      font-weight: 300;
+
+      h2 {
+        font-weight: bold;
+        color: variables.$primaryColor;
+        font-size: variables.$fontSizeMd;
+        text-align: left;
+        margin: 0;
+        padding-left: 22px;
+      }
+
+      span {
+        font-size: variables.$fontSizeMd;
+        text-align: right;
+        padding-right: 22px;
+      }
+    }
+  }
+
+  .btnContainer {
+    min-width: 276px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .btn {
+      width: 132px;
+    }
+  }
+
+  .warning {
+    padding: 0 22px 0 22px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.hint {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(37px);
+  border-radius: 4px;
+  width: 300px;
+  height: 76px;
+  padding-left: 46px;
+  padding-right: 39px;
+  align-items: center;
+  display: flex;
+
+  .icon {
+    color: variables.$primaryColor;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+  }
+
+  span {
+    font-size: variables.$inputLabelSize;
+  }
+}
+
+.warning {
+  padding: 0 22px 0 22px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}

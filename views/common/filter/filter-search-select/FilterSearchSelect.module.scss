@@ -1,0 +1,122 @@
+@use 'src/resources/styles/variables';
+//TODO: REFACTORE SELECTOR STYLES
+.filterInput {
+  width: 200px;
+  height: 56px;
+  margin-right: 24px;
+  color: rgba(variables.$mainLightColor, 0.9);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  align-items: center;
+  margin-bottom: 0px !important;
+  overflow: hidden;
+
+  :global {
+    .ant-select-selection-placeholder {
+      top: 28px;
+      left: 40px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(variables.$mainLightColor, 0.6);
+    }
+
+    .ant-select-multiple {
+      .ant-select-selection-search input,
+      .ant-select-selection-search span {
+        font-weight: bold;
+        padding: 0 !important;
+        color: variables.$mainLightColor !important;
+        font-size: variables.$fontSizeSm !important;
+      }
+    }
+
+    .SelectInput_icon__14tQt {
+      top: 19px !important;
+    }
+
+    .ant-select-multiple {
+      .ant-select-selector {
+        text-align: left !important;
+      }
+    }
+
+    .ant-select-selection-overflow-item:first-of-type {
+      display: flex !important;
+      position: relative;
+      left: 40px;
+      top: 50%;
+      max-width: 130px;
+    }
+    .ant-select-selection-overflow-item:not(:last-child) {
+      display: none;
+    }
+
+    .ant-select-selection-overflow-item-suffix {
+      position: relative;
+      left: 40px;
+      top: 50%;
+    }
+
+    .ant-select-selection-placeholder {
+      text-align: left;
+      padding-left: 24px !important;
+      padding-right: 35px !important;
+    }
+
+    .ant-select-selector {
+      height: 56px !important;
+      padding: 0 !important;
+      font-size: variables.$fontSizeMd;
+      line-height: 16px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      .ant-select-selection-item {
+        text-align: left;
+        padding-left: 24px !important;
+        padding-right: 35px !important;
+      }
+    }
+  }
+
+  &:focus {
+    :global {
+      .ant-select-selection-placeholder {
+        display: none;
+      }
+    }
+  }
+}
+
+.hasIcon {
+  :global {
+    .ant-select-selection-placeholder {
+      padding-left: 45px !important;
+    }
+
+    .ant-select-selector .ant-select-selection-item {
+      padding-left: 45px !important;
+    }
+
+    .ant-select-show-search {
+      .ant-select-selection-placeholder {
+        padding-left: 2px !important;
+      }
+
+      .ant-select-selector .ant-select-selection-item {
+        padding-left: 2px !important;
+      }
+    }
+  }
+}
+
+.selectInputWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px !important;
+}

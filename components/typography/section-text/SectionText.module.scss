@@ -1,0 +1,9 @@
+@use 'src/resources/styles/variables';
+
+.text {
+  font-size: variables.$fontSizeMd;
+  color: variables.$lightTextColor;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}

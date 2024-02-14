@@ -1,0 +1,28 @@
+@use 'src/resources/styles/variables';
+.input {
+  width: 250px;
+  margin-right: 0 !important;
+  input {
+    font-weight: 300!important;
+  }
+
+  :global {
+    .ant-select-selection-placeholder {
+      color: rgba(variables.$mainDarkColor, 0.8) !important;
+      font-weight: 300;
+    }
+
+    .ant-select-selection-item {
+      color: variables.$mainDarkColor;
+      font-weight: 300;
+    }
+  }
+}
+
+.numberInput {
+  width: 250px;
+  padding: 14px;
+  height: 54px;
+  border-radius: 6px;
+  font-weight: 300!important;
+}

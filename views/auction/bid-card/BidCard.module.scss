@@ -1,0 +1,63 @@
+@use 'src/resources/styles/variables';
+.bidCard {
+    height: 209px;
+    width: 358px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(37px);
+    margin-right: 24px;
+    margin-bottom: 24px;
+    padding: 24px;
+    h1 {
+        font-size: 21px;
+        margin-bottom: 0;
+    }
+    .subTitle {
+        margin-top: 16px;
+        display: flex;
+        .time {
+            margin-bottom: 0;
+            font-weight: 300;
+            font-size: 500;
+            display: flex;
+            span:last-child {
+                color: variables.$primaryColor;
+                font-size: 15px;
+                font-weight: bold;
+                margin-left: 5px;
+            }
+            span:first-child {
+                margin-right: 10px;
+            }
+        }
+    }
+    .inputsContainer {
+        display: flex;
+        margin-top: 17px;
+        .tokensToBuy,
+        .ccToBid {
+            width: 148px;
+            display: flex;
+            flex-direction: column;
+            .title {
+                font-size: 15px;
+                font-weight: 300;
+            }
+            .textArea {
+                margin-top: 12px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(20px);
+                border-radius: 4px;
+                padding: 11px 16px;
+                span {
+                    font-size: 19px;
+                    line-height: 18px;
+                }
+            }
+        }
+        .ccToBid {
+            margin-left: 14px;
+        }
+    }
+}

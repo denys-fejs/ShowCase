@@ -1,0 +1,69 @@
+@use '../../../../../resources/styles/variables';
+
+
+.dropdownLabel {
+  min-width: 80px;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(variables.$mainLightColor,0.6);
+
+  .avatar {
+    text-align: center;
+    img {
+      opacity: 0.2;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .companyName {
+    margin-top: 19px;
+    color: variables.$mainDarkColor;
+    font-size: variables.$biggerFontSize;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .walletAddress {
+    color: rgba(variables.$mainDarkColor, 0.6);
+    font-size: variables.$fontSizeSm;
+    line-height: 24px;
+    text-align: center;
+    margin: 10px 4px 24px 4px;
+
+    img {
+      opacity: 0.3;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.buttons {
+  padding: 24px 28px 4px 28px;
+  border-top: 1px solid rgba(variables.$lightTextColor,0.6);
+
+  .accountCardSignOut,
+  .accountCardRegister,
+  .accountCardDisconnect {
+    height: 50px;
+    box-shadow: none;
+    font-weight: 300;
+    margin-top: 16px;
+    text-transform: none;
+  }
+
+  .accountCardDisconnect {
+    background-color: rgba(variables.$mainLightColor, 0.5);
+    color: variables.$mainDarkColor;
+  }
+}

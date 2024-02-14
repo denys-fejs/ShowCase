@@ -1,0 +1,90 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  position: relative;
+}
+
+.filterWrapper {
+  border-radius: 8px;
+  backdrop-filter: blur(70px);
+  background-color: rgba(variables.$mainLightColor, 0.12);
+  margin: 0 28px;
+  bottom: 0;
+  width: -webkit-fill-available;
+}
+
+.ddWrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  flex-wrap: wrap;
+}
+.dropDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  margin-bottom: 20px;
+  img {
+    // makes svg light grey
+    filter: invert(100%) brightness(55%);
+  }
+}
+
+.banner {
+  min-height: 308px;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 20px;
+  .title {
+    font-size: variables.$fontSizeBannerTitle;
+    color: variables.$mainLightColor;
+    text-align: left;
+    line-height: 45px;
+    font-weight: 300;
+    max-width: 430px;
+    padding: 48px 0 48px 36px;
+  }
+}
+
+.filterItem {
+  margin-right: 24px;
+}
+
+.filterBtn {
+  background-color: rgba(variables.$primaryColor, 0.2);
+  backdrop-filter: blur(30px);
+  color: variables.$mainDarkColor;
+  border: none;
+  border-radius: 8px;
+  font-size: variables.$fontSizeSm;
+  height: 56px;
+  width: 56px;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: rgba(variables.$primaryColor, 0.06);
+    color: variables.$mainDarkColor;
+  }
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.filtersAndSelected {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 24px 24px 4px 24px;
+}
+
+.selectedFilters {
+  border-top: 1px solid rgba(variables.$mainLightColor, 0.16);
+  padding: 24px;
+  display: flex;
+}

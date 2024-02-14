@@ -1,0 +1,38 @@
+@use 'src/resources/styles/variables';
+
+.selectedFiltersContainer {
+  display: flex;
+}
+
+.leftSide,
+.rightSide {
+  display: flex;
+  align-items: center;
+}
+
+.clearBtn {
+  display: flex;
+  width: 95px;
+  height: 32px;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  background-color: rgba(107, 187, 174, 0.15);
+  padding: 10px 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: variables.$fontSizeSm;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: variables.$primaryColor;
+  cursor: pointer;
+  justify-content: space-between;
+  span {
+    padding-right: 5px;
+    color: variables.$primaryColor !important;
+  }
+}
+
+.divider {
+  border-color: #414141 !important;
+  margin: 3px 9px !important;
+}

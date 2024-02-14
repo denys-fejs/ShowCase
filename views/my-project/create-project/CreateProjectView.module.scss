@@ -1,0 +1,47 @@
+@use "src/resources/styles/variables";
+
+.backgroundImage {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+.formContainer {
+  position: relative;
+  max-width: 540px;
+  padding: 0 300px;
+  box-sizing: content-box;
+  margin: auto;
+}
+
+.buttonsContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 150vw;
+    top: 0;
+    left: -25%;
+    position: absolute;
+    background-color: variables.$darkLabelBgColor;
+    z-index: 0;
+  }
+}
+
+.actionButton {
+  width: 160px;
+  margin: 0 12px;
+  text-transform: uppercase;
+  border-radius: 8px;
+}

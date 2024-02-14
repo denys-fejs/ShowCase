@@ -1,0 +1,30 @@
+@use 'src/resources/styles/variables';
+
+.button {
+  padding: 0;
+  color: variables.$lightTextColor;
+  font-size: variables.$fontSizeXl;
+  text-align: center;
+  background: rgba(16, 24, 32, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(97.8581px);
+  border-radius: 4px;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: transparent;
+    color: variables.$lightTextColor;
+    border: 0.5px solid rgba(variables.$lightTextColor, 0.24);
+  }
+}
+
+:global(.small) {
+  width: 33px;
+  height: 33px;
+}
+
+:global(.middle) {
+  width: 40px;
+  height: 40px;
+}

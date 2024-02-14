@@ -1,0 +1,123 @@
+@use "src/resources/styles/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.innerContainer {
+  width: 100%;
+}
+
+.loadingCard,
+.card {
+  width: 100%;
+  max-width: 620px;
+  margin: 24px auto;
+  padding: 40px;
+}
+
+.loadingCard {
+  text-align: center;
+  font-size: variables.$fontSizeMd;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.tokenName {
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.infoBlock {
+  display: inline-block;
+  font-size: variables.$fontSizeMd;
+  font-weight: 300;
+  width: 160px;
+  margin-bottom: 28px;
+}
+
+.highlighted {
+  color: variables.$primaryColor;
+  font-weight: 600;
+}
+
+.projectName {
+  font-size: variables.$biggerFontSize;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.projectDescription {
+  font-size: variables.$fontSizeSm;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.projectLink {
+  display: inline-block;
+}
+
+.projectButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  width: 176px;
+  border-radius: 4px;
+
+  img {
+    // makes svg white
+    filter: invert(98%) sepia(98%) saturate(3%) hue-rotate(295deg) brightness(106%) contrast(100%);
+  }
+}
+
+.documentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.document {
+  width: 100%;
+}
+
+.documentData {
+  display: flex;
+  align-items: center;
+  font-size: variables.$subtitle1FontSize;
+  color: variables.$mainDarkColor;
+  font-weight: 300;
+
+  img {
+    width: 20px;
+    // makes svg green
+    filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+  }
+}
+
+.documentInfo {
+  margin-left: 28px;
+}
+
+.documentDate {
+  opacity: 0.6;
+}
+
+.downloadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  width: 130px;
+  border-radius: 4px;
+
+  img {
+    // makes svg white
+    filter: invert(98%) sepia(98%) saturate(3%) hue-rotate(295deg) brightness(106%) contrast(100%);
+  }
+}

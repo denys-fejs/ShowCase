@@ -1,0 +1,24 @@
+@use "src/resources/styles/variables";
+
+.importButton {
+  display: flex;
+  font-size: variables.$fontSizeSm;
+  background: inherit!important;
+  color: #FFF!important;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.tooltip {
+  padding: 0;
+  margin: 0;
+  :global {
+    .ant-tooltip-inner {
+      padding: 2px 8px;
+      min-height: 24px;
+      background-color: rgba(variables.$mainLightColor, 0.4);
+      backdrop-filter: blur(37px);
+    }
+  }
+}

@@ -1,0 +1,140 @@
+@use 'src/resources/styles/variables';
+
+.chart {
+  height: 310px !important;
+  width: 100% !important;
+  max-width: 1500px !important;
+  background: transparent !important;
+  position: absolute;
+  right: 24px;
+  bottom: 10px;
+  padding-left: 25px;
+
+  svg {
+    g:first-of-type {
+      rect:first-child {
+        fill: none !important;
+      }
+    }
+  }
+
+  rect {
+    stroke-opacity: 50%;
+    fill-opacity: 50%;
+  }
+}
+
+.statisticSection {
+  position: absolute;
+  left: 2%;
+  top: 40%;
+
+  .statisticContainer,
+  .statisticContainerCirculation {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .statisticContainerCirculation {
+    .left {
+      span {
+        color: #a3f2ee;
+      }
+    }
+  }
+
+  .statisticContainer {
+    .left {
+      span {
+        color: #f7b500;
+      }
+    }
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .sum {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #ffffff;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carbonCoin {
+    font-size: 34px !important;
+    padding-top: 8px;
+  }
+
+  .left {
+    margin-right: 10px;
+
+    height: 48px;
+    padding: 0 16px 0 30px;
+    position: relative;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid variables.$primaryColor;
+      border-radius: 50%;
+      padding: 2px;
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: variables.$primaryColor;
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .burned {
+    &:before {
+      border-color: variables.$yellowBurnedColor;
+    }
+
+    &:after {
+      background-color: variables.$yellowBurnedColor;
+    }
+  }
+
+  .planed {
+    &:before {
+      border-color: variables.$greenPlanedColor;
+    }
+
+    &:after {
+      background-color: variables.$greenPlanedColor;
+    }
+  }
+}

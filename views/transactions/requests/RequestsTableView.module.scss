@@ -1,0 +1,14 @@
+@use 'src/resources/styles/variables';
+.table {
+  margin: 8px 0;
+
+  :global {
+    .ant-table-tbody {
+      font-weight: 300;
+
+      .ant-table-cell {
+        padding: 14px 16px;
+      }
+    }
+  }
+}

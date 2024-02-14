@@ -1,0 +1,49 @@
+@use 'src/resources/styles/variables';
+
+header {
+  height: 72px;
+  align-items: center;
+  display: grid;
+  padding-top: 22px;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+
+  div:last-child {
+    margin-right: 0;
+  }
+}
+
+.signIn {
+  margin-left: 12px;
+}
+
+.backBtn {
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: variables.$mainLightColor;
+  box-shadow: 0 4px 28px rgba(16, 24, 32, 0.1);
+  border-radius: 8px;
+
+  span {
+    font-size: variables.$fontSizeSm!important;
+  }
+
+  svg {
+    fill: variables.$primaryColor;
+  }
+}
+
+.filterItem {
+  img {
+    // makes svg green
+    filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+  }
+}

@@ -1,0 +1,48 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  padding: 10px 0;
+}
+
+.checkbox {
+  font-size: variables.$fontSizeMd;
+  font-weight: bold;
+  color: variables.$lightTextColor;
+  align-items: flex-start;
+  line-height: 25px;
+
+  a {
+    color: variables.$lightTextColor;
+    text-decoration: underline;
+
+    &:hover {
+      color: variables.$primaryColor;
+    }
+  }
+
+  :global {
+    .ant-checkbox {
+      margin-right: 8px;
+    }
+
+    .ant-checkbox-disabled + span {
+      color: variables.$lightTextColor;
+      opacity: 0.5;
+    }
+
+    .ant-checkbox-inner {
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(255, 255, 255, 0.54) !important;
+      background: transparent;
+
+      &::after {
+        border-color: rgba(255, 255, 255, 0.54) !important;
+      }
+    }
+
+    .ant-checkbox-checked::after {
+      border: none;
+    }
+  }
+}

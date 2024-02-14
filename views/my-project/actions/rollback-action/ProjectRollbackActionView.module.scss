@@ -1,0 +1,14 @@
+@use "src/resources/styles/variables";
+
+.secondaryButton {
+  text-transform: none;
+  background-color: rgba(variables.$primaryColor, 0.24);
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.primaryButton {
+  width: auto!important;
+  text-transform: none;
+  letter-spacing: 0;
+}

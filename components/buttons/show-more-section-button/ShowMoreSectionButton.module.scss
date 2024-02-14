@@ -1,0 +1,23 @@
+@use "src/resources/styles/variables";
+
+.showMoreSectionButton {
+  width: 100%;
+  height: 72px;
+  border-radius: 8px;
+  background: rgba(16, 24, 32, 0.3);
+  border: 1px solid rgba(16, 24, 32, 0.05);
+  color: variables.$mainLightColor;
+  font-size: variables.$fontSizeMd;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  text-align: center;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: variables.$showMoreBgColor;
+    color: variables.$lightTextColor;
+    border: 1px solid rgba(16, 24, 32, 0.05);
+  }
+}
+

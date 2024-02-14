@@ -1,0 +1,31 @@
+@use 'src/resources/styles/variables';
+.table {
+  margin: 18px 0;
+
+  :global {
+    .ant-table-tbody {
+      font-weight: 300;
+
+      .ant-table-cell {
+        padding: 14px 16px;
+      }
+    }
+  }
+}
+
+.countryCell {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: variables.$mainDarkColor;
+
+  .flag {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+}
+.buttonCreate {
+  width: 250px;
+  margin-bottom: 25px;
+}

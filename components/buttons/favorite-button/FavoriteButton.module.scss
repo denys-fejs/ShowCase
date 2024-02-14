@@ -1,0 +1,19 @@
+.small {
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.middle {
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.favoriteButton:focus {
+  background: rgba(16, 24, 32, 0.12)!important;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(97.8581px);
+}

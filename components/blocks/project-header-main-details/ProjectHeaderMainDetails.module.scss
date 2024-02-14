@@ -1,0 +1,76 @@
+@use "src/resources/styles/variables";
+
+.countrySubtitle {
+  h3 {
+    color: variables.$mainDarkColor;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+}
+.projectCountry {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  .flag {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+
+  span {
+    line-height: 24px;
+  }
+}
+
+
+.mainDetails {
+  padding-left: 0;
+  margin-bottom: 0!important;
+  list-style-type: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  .mainDetailsItem {
+    height: 48px;
+    margin: 32px 0 28px;
+    padding: 0 24px;
+    border-right: 1px solid rgba(variables.$mainDarkColor, 0.16);
+
+    .typeContainer {
+      display: flex;
+
+      .iconBox {
+        padding: 12px;
+
+        img {
+          width: 24px;
+          height: 24px;
+          // makes svg green
+          filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+        }
+      }
+    }
+
+    .title {
+      display: block;
+      color: rgba(variables.$mainDarkColor,0.6);
+      font-size: variables.$fontSizeSm;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      line-height: 24px;
+    }
+    .value {
+      color: variables.$mainDarkColor;
+      font-size: variables.$subtitle1FontSize;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      line-height: 24px;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+

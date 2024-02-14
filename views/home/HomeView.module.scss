@@ -1,0 +1,27 @@
+@use 'src/resources/styles/variables';
+.linkWrapper {
+  text-align: center;
+  margin: 20px;
+}
+.banner {
+  min-height: 308px;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  .title {
+    font-size: variables.$fontSizeBannerTitle;
+    color: variables.$mainLightColor;
+    text-align: left;
+    line-height: 45px;
+    font-weight: 300;
+    max-width: 477px;
+    padding: 48px 0 48px 36px;
+  }
+}
+
+.hideShowMoreButton {
+  display: none;
+}

@@ -1,0 +1,31 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  display: inline-block;
+  margin: 6px 12px;
+}
+
+.button {
+  width: auto;
+  height: 40px;
+  padding: 8px 12px;
+  background-color: variables.$dangerColor;
+  color: variables.$mainLightColor;
+  border: none;
+  border-radius: 4px;
+  font-size: variables.$fontSizeSm;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: rgba(variables.$dangerColor, 0.7);
+    color: variables.$mainLightColor;
+  }
+
+  :global(.anticon) {
+    font-size: variables.$fontSizeLg;
+    color: variables.$mainLightColor !important;
+  }
+}

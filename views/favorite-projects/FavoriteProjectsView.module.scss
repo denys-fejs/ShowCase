@@ -1,0 +1,10 @@
+@use 'src/resources/styles/variables';
+
+.gradient {
+  height: 100vh;
+  width: calc(100% - 256px);
+  position: absolute;
+  z-index: -1;
+  margin: 0 -48px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35) 15%, rgba(242,243,244) 45.83%, rgba(242,243,244) 95%);
+}

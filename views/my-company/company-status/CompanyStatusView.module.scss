@@ -1,0 +1,34 @@
+@use "src/resources/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.statusLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 40px;
+  padding: 14px 20px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  font-size: variables.$fontSizeSm;
+  background-color: rgba(variables.$lightTextColor, 0.8);
+}
+
+.statusText {
+  margin-left: 10px;
+}
+
+.pendingLabel {
+  color: variables.$primaryColor;
+  border: 1px solid variables.$primaryColor;
+}
+
+.rejectLabel {
+  color: variables.$errorColor;
+  border: 1px solid variables.$errorColor;
+}

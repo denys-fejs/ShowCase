@@ -1,0 +1,32 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  margin: 32px 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+.sectionTitle {
+  font-size: variables.$headline4FontSize;
+  color: variables.$mainDarkColor;
+  font-family: "Breakers Slab W00", serif !important;
+  font-weight: 300;
+  text-align: inherit;
+  margin: 0;
+}
+
+.sectionSubtitle {
+  padding: 4px 0;
+  font-size: variables.$fontSizeSm;
+  color: variables.$mainDarkColor;
+  font-weight: 400;
+  text-align: inherit;
+
+  a {
+    color: variables.$primaryColor;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

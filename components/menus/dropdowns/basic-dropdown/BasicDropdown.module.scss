@@ -1,0 +1,72 @@
+@use 'src/resources/styles/variables';
+
+.dropdown {
+  color: variables.$mainDarkColor;
+  font-size: variables.$fontSizeSm;
+  cursor: pointer;
+  height: 40px;
+
+  span {
+    display: inline-block;
+    font-size: variables.$subtitle1FontSize;
+    margin-left: 5px;
+  }
+}
+
+.arrow {
+  color: variables.$mainDarkColor;
+  font-size: variables.$fontSizeXxs !important;
+  margin-left: 6px;
+  vertical-align: middle;
+  line-height: 45px;
+
+  svg {
+    fill: black;
+  }
+}
+
+.flexContainer {
+  display: flex !important;
+  justify-content: space-between;
+  width: 100%;
+
+  .arrow {
+    line-height: 28px;
+  }
+}
+
+.dropdownWrapper {
+  display: flex;
+
+  .dropdownNameWrapper {
+    height: 40px;
+    min-width: 40px;
+    width: 100%;
+    padding: 9px 13px;
+    backdrop-filter: blur(30px);
+    background-color: variables.$mainLightColor;
+    box-shadow: 0 4px 20px rgba(16, 24, 32, 0.05);
+    border-radius: 4px;
+  }
+}
+
+.icon {
+  margin-right: 12px;
+}
+
+.wide {
+  width: 230px;
+  height: 56px;
+  color: rgba(variables.$lightTextColor, 0.6);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  align-items: center;
+  padding-left: 16px;
+
+  div {
+    display: inline-block;
+    font-size: variables.$fontSizeMd;
+    letter-spacing: 0.15px;
+  }
+}

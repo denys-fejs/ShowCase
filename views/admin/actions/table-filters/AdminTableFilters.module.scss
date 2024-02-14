@@ -1,0 +1,48 @@
+@use 'src/resources/styles/variables';
+.input {
+  input {
+    font-weight: 300!important;
+  }
+  width: 300px;
+}
+
+.searchSelect {
+  width: 250px;
+
+  :global {
+    .ant-select-selection-placeholder {
+      color: rgba(variables.$mainDarkColor, 0.8) !important;
+      font-weight: 300;
+    }
+
+    .ant-select-selection-item {
+      color: variables.$mainDarkColor;
+      font-weight: 300;
+    }
+  }
+}
+
+.searchTextInput {
+
+  input {
+    font-size: variables.$fontSizeMd!important;
+
+  }
+  :global {
+    .ant-select-auto-complete {
+      background: rgba(variables.$mainLightColor, 0.3) !important;
+      box-shadow: none!important;
+    }
+
+    .ant-select-selection-placeholder {
+      color: rgba(variables.$mainDarkColor, 0.8);
+      font-size: variables.$fontSizeMd;
+    }
+  }
+
+  img {
+    // makes svg green
+    filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+  }
+
+}

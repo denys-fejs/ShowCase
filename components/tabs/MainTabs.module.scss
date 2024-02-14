@@ -1,0 +1,45 @@
+@use 'src/resources/styles/variables';
+
+.tabs {
+  min-width: 673px !important;
+  :global {
+    .ant-tabs {
+      overflow: visible !important;
+    }
+
+    .ant-tabs-tab-btn {
+      font-size: variables.$fontSizeMd;
+      color: variables.$mainDarkColor;
+      line-height: 24px;
+      letter-spacing: 0.4px;
+      padding: 0 25px;
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: variables.$primaryColor !important;
+      transition: none !important;
+    }
+
+    .ant-tabs-ink-bar {
+      height: 5px;
+      background: variables.$primaryColor !important;
+    }
+
+    .ant-tabs-tab {
+      font-weight: 300;
+      margin: 0;
+    }
+
+    .ant-tabs-tab-active {
+      font-weight: 600;
+    }
+
+    .ant-tabs-tabpane-active {
+      margin-top: 8px;
+    }
+
+    .ant-tabs-nav:before {
+      border-bottom: 1px solid rgba(255,255,255,0.5) !important;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@use 'src/resources/styles/variables';
+
+.filterBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(variables.$mainLightColor, 0.4);
+  color: variables.$mainDarkColor;
+  cursor: pointer;
+
+  .titleContainer {
+    p {
+      padding: 0 !important;
+      margin: 0 !important;
+      font-size: variables.$subtitle1FontSize;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      font-weight: bold;
+    }
+  }
+
+  .title {
+    font-weight: 300;
+    font-size: variables.$subtitle1FontSize;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+
+  span {
+    height: fit-content;
+  }
+
+  img {
+    // makes svg green
+    filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+  }
+}

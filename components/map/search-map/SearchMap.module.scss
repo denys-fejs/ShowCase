@@ -1,0 +1,23 @@
+@use 'src/resources/styles/variables';
+
+
+.mapWrapper {
+  min-height: 400px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(40px);
+  padding: 8px 12px 12px 12px;
+  margin-bottom: 24px;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 2px solid variables.$primaryColor;
+
+
+  .title {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .searchMap {
+    height: 350px;
+    border-radius: 4px;
+  }
+}

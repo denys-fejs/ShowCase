@@ -1,0 +1,127 @@
+@use 'src/resources/styles/variables';
+.container {
+    margin-top: 60px;
+    display: flex;
+    .left {
+        width: 20%;
+        min-width: 276px;
+        .table {
+             :global {
+                .ant-table-tbody {
+                    top: 0;
+                }
+                .ant-table-row.ant-table-row-level-0.time {
+                    td:last-child {
+                        color: variables.$primaryColor;
+                        font-size: 15px;
+                        line-height: 18px;
+                        font-weight: 700;
+                    }
+                }
+                .ant-table-thead {
+                    height: 45px;
+                    background: transparent;
+                    th {
+                        color: variables.$mainDarkColor !important;
+                        font-size: 17px;
+                        line-height: 20px;
+                        font-weight: 700;
+                    }
+                    .title {
+                        font-family: "Breakers Slab W00", serif!important;
+                        position: absolute;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .ant-table-tbody {
+                    font-size: 15px;
+                    tr {
+                        td:last-child {
+                            text-align: right !important;
+                        }
+                    }
+                }
+                .ant-table-header {
+                    background: rgba(255, 255, 255, 0.3);
+                    backdrop-filter: blur(37px);
+                    border-radius: 8px 8px 0px 0px;
+                }
+                .ant-table-tbody {
+                    border-bottom-right-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                    background: rgba(255, 255, 255, 0.3);
+                    backdrop-filter: blur(37px);
+                    height: fit-content;
+                }
+
+                 .ant-table-cell {
+                     background: transparent;
+                 }
+            }
+        }
+    }
+    .right {
+        margin-left: 48px;
+        height: fit-content;
+        width: 80%;
+        .title {
+            font-family: "Breakers Slab W00", serif!important;
+            justify-content: center;
+            display: flex;
+            font-weight: 700;
+            font-size: 17px;
+            margin: 14px 0 20px 0;
+        }
+        .bidCardContainer {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(37px);
+            border-radius: 8px;
+            padding-left: 24px;
+            .bidsWrapper {
+                display: flex;
+                flex-flow: row wrap;
+            }
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+             :global {
+                .ant-pagination {
+                    li,
+                    button,
+                    span,
+                    a {
+                        background-color: inherit !important;
+                        border: none !important;
+                        color: variables.$primaryColor !important;
+                    }
+                    .ant-pagination-item-active a {
+                        color: variables.$mainDarkColor !important;
+                    }
+                    .ant-pagination-total-text {
+                        color: variables.$mainDarkColor !important;
+                    }
+                }
+            }
+        }
+    }
+    .noBidsPlaceholder {
+        width: 100%;
+        text-align: center;
+        padding: 60px 0;
+        font-family: "Breakers Slab W00", serif!important;
+        font-weight: 500;
+        font-size: variables.$headline2FontSize;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+    span {
+        margin-left: 10px;
+    }
+}

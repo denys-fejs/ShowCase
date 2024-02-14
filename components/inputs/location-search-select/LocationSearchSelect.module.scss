@@ -1,0 +1,24 @@
+@use 'src/resources/styles/variables';
+
+.hasIcon {
+  :global {
+    .ant-select-selection-placeholder {
+      padding-left: 45px !important;
+    }
+
+    .ant-select-selector .ant-select-selection-item {
+      padding-left: 45px !important;
+    }
+
+    .ant-select-show-search {
+      .ant-select-selection-placeholder {
+        padding-left: 2px !important;
+      }
+
+      .ant-select-selector .ant-select-selection-item {
+        padding-left: 2px !important;
+      }
+    }
+  }
+}
+

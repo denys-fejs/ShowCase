@@ -1,0 +1,32 @@
+@use 'src/resources/styles/variables';
+
+.addBtn {
+  color: variables.$primaryColor !important;
+  background: variables.$mainLightColor;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 9px 12px 11px;
+  height: 36px;
+}
+.addBtnPlus {
+  color: variables.$primaryColor !important;
+  margin-right: 11px;
+}
+.addBtnPlus:hover {
+  color: variables.$primaryColor;
+}
+.addBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: variables.$fontSizeSm;
+  font-weight: bold;
+  .text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 2px;
+  }
+}

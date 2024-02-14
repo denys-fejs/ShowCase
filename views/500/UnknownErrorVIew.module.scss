@@ -1,0 +1,29 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  width: 550px;
+  max-width: 100vw;
+  font-family: "Breakers Slab W00", serif;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: variables.$fontSizeXxxl;
+  color: variables.$mainDarkColor;
+  font-weight: 300;
+  margin: 0;
+}
+
+.message {
+  max-width: 380px;
+  font-size: variables.$biggerFontSize;
+  font-weight: 300;
+  margin: 20px auto;
+}
+
+.button {
+  width: 180px;
+  margin: 20px 0;
+}

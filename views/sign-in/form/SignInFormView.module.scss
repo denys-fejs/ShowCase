@@ -1,0 +1,10 @@
+.signInForm {
+  img {
+    // makes svg white
+    filter: invert(100%);
+  }
+}
+.signInFormSubmit {
+  width: 180px;
+  margin: 0 auto;
+}

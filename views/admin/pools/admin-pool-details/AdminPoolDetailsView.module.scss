@@ -1,0 +1,41 @@
+@use "src/resources/styles/variables";
+
+.editButton {
+  width: 250px;
+  position: absolute;
+}
+.countries, .standards, .types {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px auto;
+}
+
+.projectCountry {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  .flag {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+
+  span {
+    line-height: 24px;
+  }
+}
+
+.standardTag, .typesTag {
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 6px;
+  background: rgba(variables.$mainLightColor,0.3);
+  backdrop-filter: blur(40px);
+  margin-right: 6px;
+}
+.typesTag {
+  background: rgba(variables.$primaryColor, 0.3);
+}

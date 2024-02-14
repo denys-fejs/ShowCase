@@ -1,0 +1,36 @@
+@use "src/resources/styles/variables";
+
+.button {
+  :global {
+    .ant-input-affix-wrapper-disabled,
+    .ant-input[disabled] {
+      cursor: pointer;
+    }
+    .ant-input-suffix {
+      font-weight: 300!important;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.description {
+  font-size: variables.$fontSizeSm;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 10px 0 20px 0;
+}
+
+.documentsContainer {
+  margin-top: 20px;
+  color: variables.$mainDarkColor !important;
+
+  :global {
+    .ant-upload p {
+      color: variables.$mainDarkColor;
+    }
+  }
+}

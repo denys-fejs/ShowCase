@@ -1,0 +1,96 @@
+@use "src/resources/styles/variables";
+
+.container {
+  :global(.ant-form-item-explain) {
+    margin: 4px;
+  }
+}
+
+.textarea {
+  background-color: rgba(variables.$mainLightColor, 0.3) !important;
+  color: variables.$mainDarkColor;
+  font-weight: bold;
+  border: none;
+  box-shadow: none;
+
+  &::placeholder {
+    color: rgba(variables.$mainDarkColor, 0.8) !important;
+    font-weight: 300!important;
+  }
+  :global(.ant-input[disabled]) {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  input {
+    font-weight: 500;
+    color: variables.$lightTextColor;
+    background-color: transparent !important;
+  }
+
+  :global(.ant-input-prefix),
+  input::placeholder {
+    color: rgba(variables.$mainDarkColor, 0.8) !important;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.small {
+  font-size: variables.$fontSizeSm;
+
+  input {
+    font-size: variables.$fontSizeSm;
+  }
+}
+
+.middle {
+  font-size: variables.$fontSizeMd;
+  padding: 16px;
+  border-radius: 4px;
+
+  input {
+    font-size: variables.$fontSizeMd;
+  }
+
+  :global {
+    .ant-input-prefix {
+      width: 24px;
+      justify-content: center;
+      font-size: variables.$fontSizeXl;
+      margin-right: 12px;
+    }
+  }
+}
+
+.large {
+  font-size: variables.$fontSizeLg;
+
+  input {
+    font-size: variables.$fontSizeLg;
+  }
+}
+
+.borderVisible {
+  border-bottom: 2px solid variables.$primaryColor!important;
+  border-radius: 4px 4px 0 0;
+  padding: 24px 16px 8px 16px!important;
+
+  &::placeholder {
+    color: transparent!important;
+  }
+}
+
+.fieldLabel {
+  color: variables.$mainDarkColor;
+  position: absolute;
+  font-size: variables.$inputLabelSize;
+  top: 8px;
+  left: 16px;
+  z-index: 2;
+}

@@ -1,0 +1,5 @@
+.milestoneItemContainer > div:last-child > a:first-child > div {
+  &:after {
+    content: none!important;
+  }
+}

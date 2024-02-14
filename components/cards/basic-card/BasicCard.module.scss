@@ -1,0 +1,30 @@
+@use 'src/resources/styles/variables';
+
+.basicCard {
+  background: rgba(variables.$mainLightColor, 0.3);
+  backdrop-filter: blur(37px);
+  border: none;
+  border-radius: 8px;
+
+  :global {
+    .ant-card-head {
+      padding: 20px 24px 20px 16px;
+      color: variables.$mainDarkColor;
+      font-size: variables.$fontSizeLg;
+      font-weight: 400;
+      letter-spacing: 0.25px;
+      border-bottom: 1px solid variables.$inputBgColor;
+
+      .ant-card-head-title {
+        padding: 0;
+      }
+      .ant-card-extra {
+        padding: 0;
+      }
+    }
+
+    .ant-card-body {
+      padding: 1px 0;
+    }
+  }
+}

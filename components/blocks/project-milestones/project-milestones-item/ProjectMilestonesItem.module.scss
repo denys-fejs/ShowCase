@@ -1,0 +1,76 @@
+@use 'src/resources/styles/variables';
+
+.milestoneItemContainer {
+  position: relative;
+  margin: 5px;
+  height: fit-content;
+  padding: 16px 16px 16px 22px;
+  background: rgba(variables.$mainLightColor, 0.3);
+  backdrop-filter: blur(37px);
+
+  border-radius: 4px;
+
+  .title {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: variables.$mainDarkColor;
+    font-size: variables.$fontSizeLg;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+  }
+
+  .dateString {
+    position: absolute;
+    right: 16px;
+    color: rgba(variables.$mainDarkColor, 0.6);
+    font-size: variables.$fontSizeSm;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: right;
+    display: inline-block;
+  }
+
+  .description {
+    display: block;
+    color: variables.$mainDarkColor;
+    font-size: variables.$subtitle1FontSize;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin: 10px 0 20px;
+    word-break: break-all;
+  }
+
+  &:hover {
+    background: rgba(variables.$mainLightColor, 0.6);
+  }
+}
+
+.hoverContainer {
+  width: 100%;
+  padding-left: 32px;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid variables.$primaryColor;
+    border-radius: 50%;
+    padding: 2px;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translate(-50%);
+  }
+  &:after {
+    content: '';
+    display: block;
+    top: 65%;
+    left: 8px;
+    border-left: 1px solid variables.$inputBgColor;
+    height: 99%;
+    position: absolute;
+  }
+}
+

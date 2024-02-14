@@ -1,0 +1,135 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  :global(.ant-form-item-explain) {
+    margin: 4px;
+  }
+}
+
+.input {
+  border-radius: 4px!important;
+  background: rgba(variables.$mainLightColor, 0.3) !important;
+  backdrop-filter: blur(20px);
+  color: variables.$mainDarkColor;
+  border: none;
+  box-shadow: none;
+  font-weight: bold;
+
+  &::placeholder {
+    color: rgba(variables.$mainDarkColor, 0.8) !important;
+    font-weight: 300;
+  }
+
+  :global {
+    .ant-input[disabled] {
+      opacity: 0.6;
+      color: variables.$mainDarkColor;
+    }
+    .ant-input-suffix {
+      font-weight: 300!important;
+    }
+  }
+
+  input {
+    font-weight: bold;
+    color: variables.$mainDarkColor;
+    background-color: transparent !important;
+  }
+  :global(.ant-input-prefix),
+  input::placeholder {
+    color: rgba(variables.$mainDarkColor, 0.8) !important;
+    font-weight: 300;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:focus,
+  &:hover {
+    border: none;
+    box-shadow: none;
+  }
+
+  // Workaround to fix browser autofill styles
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: none;
+    -webkit-text-fill-color: variables.$mainDarkColor;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 50000s ease-in-out 0s;
+  }
+}
+
+.small {
+  font-size: variables.$fontSizeSm;
+
+  input {
+    font-size: variables.$fontSizeSm;
+  }
+}
+
+.middle {
+  font-size: variables.$fontSizeMd;
+  padding: 16px;
+  border-radius: 4px;
+
+  input {
+    font-size: variables.$fontSizeMd;
+  }
+
+  :global {
+    .ant-input-prefix {
+      width: 24px;
+      justify-content: center;
+      font-size: variables.$fontSizeXl;
+      margin-right: 12px;
+    }
+    .ant-input-suffix {
+      //width: 24px;
+      justify-content: center;
+      //font-size: variables.$fontSizeXl;
+      margin-left: 12px;
+    }
+  }
+}
+
+.large {
+  font-size: variables.$fontSizeLg;
+
+  input {
+    font-size: variables.$fontSizeLg;
+  }
+}
+
+.icon {
+  padding-left: 40px !important;
+}
+.fieldLabel {
+  color: variables.$mainDarkColor;
+  position: absolute;
+  font-size: variables.$inputLabelSize;
+  top: 8px;
+  left: 16px;
+  z-index: 2;
+}
+
+.focusedField {
+  border-bottom: 2px solid variables.$primaryColor!important;
+  padding: 24px 16px 8px 16px!important;
+  border-radius: 4px 4px 0 0!important;
+
+  input::placeholder,
+  &::placeholder {
+    color: transparent!important;
+  }
+}

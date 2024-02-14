@@ -1,0 +1,41 @@
+@use 'src/resources/styles/variables';
+
+.chartSectionContainer {
+  width: 100%;
+  position: relative;
+  height: 360px;
+
+  :global {
+    .ant-tabs-tab {
+      padding: 24px 0 24px 0 !important;
+    }
+  }
+
+  .btnsContainer {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+
+  .btn {
+    color: variables.$mainLightColor;
+    font-weight: normal !important;
+    background-color: transparent;
+    backdrop-filter: none;
+    border: 1px solid variables.$mainLightColor;
+    margin-right: 12px;
+  }
+
+  .btnActive {
+    color: variables.$primaryColor;
+    font-weight: bold !important;
+    background-color: variables.$mainLightColor;
+    border: 1px solid variables.$mainLightColor;
+    margin-right: 12px;
+  }
+
+  .btn:last-child,
+  .btnActive:last-child {
+    margin-right: 24px;
+  }
+}

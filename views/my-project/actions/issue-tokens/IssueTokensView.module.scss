@@ -1,0 +1,46 @@
+@use "src/resources/styles/variables";
+
+.button {
+  min-width: 160px;
+  width: auto;
+  height: 40px;
+  box-shadow: none;
+  margin: 0 8px;
+}
+
+.description {
+  font-size: variables.$fontSizeSm;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 10px 0 20px 0;
+}
+
+.available {
+  font-size: variables.$fontSizeSm;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.availablePlaceholder {
+  font-size: variables.$fontSizeXs;
+  color: rgba(16, 24, 32, 0.6);
+  font-weight: 400;
+  margin: 0;
+}
+
+.availableAmount {
+  color: variables.$mainDarkColor;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.divider {
+  margin: 0 10px !important;
+  height: 24px !important;
+  border-color: variables.$inputBgColor !important;
+}
+
+.highlighted {
+  cursor: pointer;
+  color: variables.$primaryColor;
+}

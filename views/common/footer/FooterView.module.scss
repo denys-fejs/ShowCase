@@ -1,0 +1,31 @@
+@use "src/resources/styles/variables";
+
+.footer {
+  width: calc(100% - 256px);
+  position: relative;
+  left: 256px;
+  text-align: center;
+  font-size: variables.$fontSizeXs;
+  color: variables.$lightTextColor2;
+  margin-top: 40px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.menu {
+  padding: 20px;
+}
+
+.divider {
+  margin: 0 10px;
+}
+
+.link {
+  color: variables.$lightTextColor2;
+
+  &:hover {
+    color: variables.$primaryColor;
+  }
+}

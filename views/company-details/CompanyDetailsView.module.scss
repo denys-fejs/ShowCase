@@ -1,0 +1,9 @@
+.companyContainer {
+  width: 620px;
+  margin: 20px auto;
+
+  img {
+    // makes svg green
+    filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+  }
+}

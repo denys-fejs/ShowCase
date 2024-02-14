@@ -1,0 +1,33 @@
+@use "src/resources/styles/variables";
+
+.projectCountry {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  .flag {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+
+  span {
+    line-height: 24px;
+  }
+}
+
+.roundCoverImg {
+  width: 120px;
+  height: 120px;
+  margin: 16px auto;
+  border-radius: 50%;
+  display: flex;
+}
+
+.countrySubtitle {
+  h3 {
+    color: variables.$mainDarkColor;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+}

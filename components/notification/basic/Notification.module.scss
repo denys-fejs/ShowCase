@@ -1,0 +1,32 @@
+@use "src/resources/styles/variables";
+
+.notification {
+  backdrop-filter: blur(40px);
+  background-color: variables.$mainLightColor;
+  border-radius: 4px;
+  min-height: 64px;
+
+  :global(.ant-notification-notice-message) {
+    color: variables.$mainDarkColor;
+    font-size: variables.$fontSizeMd;
+    font-weight: 500;
+  }
+
+  :global(.ant-notification-notice-description) {
+    color: variables.$mainDarkColor;
+    font-size: variables.$fontSizeSm;
+    font-weight: 300;
+  }
+
+  :global(.anticon-close) {
+    color: variables.$mainDarkColor;
+  }
+
+  :global(.anticon-check-circle) {
+    color: variables.$successColor;
+  }
+
+  :global(.anticon.ant-notification-notice-icon-info) {
+    color: variables.$yellowBurnedColor!important;
+  }
+}

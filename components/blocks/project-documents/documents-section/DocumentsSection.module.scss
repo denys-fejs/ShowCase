@@ -1,0 +1,19 @@
+@use 'src/resources/styles/variables';
+
+.documentSectionTitle {
+  height: 56px;
+  width: 100%;
+  color: variables.$mainDarkColor;
+  font-size: variables.$subtitle1FontSize;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  line-height: 56px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+.date {
+  span {
+    font-weight: 300!important;
+  }
+}

@@ -1,0 +1,86 @@
+@use 'src/resources/styles/variables';
+.container {
+  width: inherit;
+  height: 83px;
+  background: variables.$mainLightColor;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  margin-bottom: 32px;
+  .actionsBox {
+    display: flex;
+    align-items: flex-end;
+  }
+  .leftSide,
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+  }
+  .rightSide {
+    text-align: end;
+  }
+  .title {
+    font-weight: 300;
+    font-size: variables.$subtitle1FontSize;
+    line-height: 24px;
+    color: variables.$mainDarkColor;
+  }
+  .subTitleWrapper {
+    margin-top: 5px;
+  }
+  .subTitle {
+    font-size: variables.$headline2FontSize;
+    line-height: 24px;
+    color: variables.$primaryColor;
+    font-weight: 700;
+    font-family: "Breakers Slab W00", serif !important;
+  }
+  .subTitlePrice {
+    display: block;
+    margin-top: 5px;
+    font-size: variables.$headline2FontSize;
+    line-height: 20px;
+    color: variables.$primaryColor;
+    font-weight: 700;
+    font-family: "Breakers Slab W00", serif !important;
+
+    .subtitleAddress {
+      font-size: variables.$biggerFontSize;
+      color: variables.$primaryColor;
+      font-weight: 700;
+      font-family: "Breakers Slab W00", serif !important;
+
+      div {
+        font-family: inherit!important;
+      }
+    }
+
+    :global {
+      span.anticon img {
+        // makes svg green
+        filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+      }
+    }
+  }
+  .tokenAbbreviation {
+    height: 24px;
+    border-radius: 4px;
+    background-color: rgba(variables.$primaryColor, 0.1);
+    color: variables.$primaryColor;
+    margin-left: 10px;
+    padding: 4px 9px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gotham Pro", sans-serif !important;
+    font-weight: 700;
+    font-size: variables.$inputLabelSize;
+    line-height: variables.$inputLabelSize;
+  }
+  .subTitleWrapper {
+    display: flex;
+  }
+}

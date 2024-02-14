@@ -1,0 +1,89 @@
+@use 'src/resources/styles/variables';
+
+.cardContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.dotsContainer {
+  background-color: inherit;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -50px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.dots {
+  position: inherit;
+  background: variables.$mainLightColor;
+  opacity: 0.6;
+  box-shadow: 0 4px 20px rgba(16, 24, 32, 0.05);
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  color: variables.$primaryColor;
+  margin-left: 5px;
+}
+
+.dots:hover {
+  cursor: pointer;
+}
+
+.dots:after {
+  content: '•••';
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.actions {
+  position: absolute;
+  top: 45px;
+  right: -45px;
+  width: 210px;
+  height: 96px;
+  background: rgba(variables.$mainLightColor, 0.8);
+  backdrop-filter: blur(37px);
+  border-radius: 8px;
+  z-index: 2;
+
+  .actionItem {
+    padding: 10px 16px;
+    height: 48px;
+    color: variables.$mainDarkColor;
+    font-size: variables.$fontSizeMd;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    img {
+      // makes svg green
+      filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+    }
+  }
+
+  .actionItem:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .actionItem:hover {
+    background-color: rgba(variables.$mainLightColor, 0.6);
+  }
+
+  .actionItem:last-child {
+    color: #e2163b;
+    border-radius: 0 0 8px 8px;
+    span {
+      color: #e2163b;
+    }
+  }
+}

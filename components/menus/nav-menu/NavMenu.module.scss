@@ -1,0 +1,28 @@
+
+.menu {
+  :global {
+    .ant-menu-item {
+      margin: 4px 0!important;
+      padding: 0px 18px !important;
+      height: 48px;
+    }
+
+    .ant-menu-title-content {
+      margin-left: 16px !important;
+    }
+  }
+}
+
+.statusIcon {
+  display: inline-block;
+  align-self: center;
+  margin-left: auto;
+
+  span {
+    display: inline-block;
+
+    img {
+      filter: none!important;
+    }
+  }
+}

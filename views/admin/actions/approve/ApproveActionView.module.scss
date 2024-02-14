@@ -1,0 +1,30 @@
+@use 'src/resources/styles/variables';
+
+.tableAction {
+  letter-spacing: 0.75px;
+  padding: 4px 11px !important;
+  border-radius: 8px !important;
+  margin: 0 2px;
+}
+
+.button {
+  min-width: 90px;
+}
+
+.item {
+  padding-top: 6px;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  font-weight: 300;
+  color: variables.$mainDarkColor;
+
+  :global(.ant-checkbox-inner) {
+    border-color: variables.$primaryColor!important;
+
+    &:after {
+      border-color: variables.$primaryColor!important;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@use "src/resources/styles/variables";
+
+.formContainer {
+  width: 500px;
+  margin: auto;
+
+  :global {
+    .anticon {
+      img {
+        // makes svg green
+        filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+      }
+    }
+  }
+}
+
+.buttonsContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 150vw;
+    top: 0;
+    left: -25%;
+    position: absolute;
+    background-color: variables.$darkLabelBgColor;
+    z-index: 0;
+  }
+}
+
+.actionButton {
+  width: 160px;
+  margin: 0 12px;
+  text-transform: none;
+  border-radius: 8px;
+  color: variables.$mainLightColor;
+  letter-spacing: 0;
+}
+
+.actionButtonCancel {
+  width: 160px;
+  margin: 0 12px;
+  text-transform: none;
+  border-radius: 8px;
+  background-color: rgba(variables.$mainLightColor, 0.3);
+  color: variables.$mainLightColor;
+  letter-spacing: 0;
+
+  &:hover {
+    color: variables.$mainLightColor;
+  }
+}

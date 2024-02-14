@@ -1,0 +1,40 @@
+@use 'src/resources/styles/variables';
+
+.button {
+  width: 132px!important;
+  text-transform: none;
+  border-radius: 8px;
+  padding: 0 12px;
+  letter-spacing: 0.1px;
+}
+
+.noMetamaskModal {
+
+  .title {
+    font-size: variables.$fontSizeLg;
+    color: variables.$lightTextColor;
+    font-weight: 500;
+    margin: 16px 0 4px 0;
+  }
+
+  img {
+    width: 100px;
+  }
+  
+  :global {
+    .ant-modal-content {
+      width: 420px;
+    }
+
+    .ant-modal-body {
+      background: none;
+      text-align: center;
+      font-size: variables.$fontSizeSm;
+      font-weight: 400;
+      padding: 40px 40px 20px 40px;
+    }
+    .ant-modal-footer {
+      text-align: center !important;
+    }
+  }
+}

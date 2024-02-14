@@ -1,0 +1,18 @@
+@use 'src/resources/styles/variables';
+.loaderContainer {
+  :global {
+    .ant-spin {
+      &-dot {
+        .ant-spin-dot-item {
+          opacity: 1 !important;
+        }
+        .ant-spin-dot-item:nth-child(-n+2) {
+          background-color: variables.$primaryColor !important;
+        }
+        .ant-spin-dot-item:nth-last-of-type(-n+2) {
+          background-color: variables.$lightTextColor !important;
+        }
+      }
+    }
+  }
+}

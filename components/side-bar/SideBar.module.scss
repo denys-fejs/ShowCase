@@ -1,0 +1,69 @@
+@use 'src/resources/styles/variables';
+
+.drawer {
+  :global {
+    .ant-drawer-content-wrapper {
+      width: 320px !important;
+      .ant-drawer-content {
+        background: transparent;
+        backdrop-filter: blur(40px)!important;
+        .ant-drawer-header {
+          background: rgba(variables.$mainLightColor, 0.6)!important;
+          backdrop-filter: blur(40px)!important;
+          display: flex;
+          justify-content: left;
+          padding-left: 46px;
+          border-color: variables.$mainLightColor !important;
+          .ant-drawer-close {
+            left: 0 !important;
+            top: -3px;
+            span {
+              color: rgba(255, 255, 255, 0.54) !important;
+            }
+            img {
+              // makes svg green
+              filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+            }
+          }
+          .ant-drawer-title {
+            color: variables.$mainDarkColor !important;
+            font-size: variables.$fontSizeLg;
+            line-height: 24px;
+            letter-spacing: 0.25px;
+            font-weight: 300;
+          }
+        }
+        .ant-drawer-wrapper-body {
+          .ant-drawer-body {
+            background: rgba(variables.$mainLightColor, 0.6)!important;
+            padding: 8px 16px !important;
+          }
+
+          .ant-drawer-footer {
+            padding: 24px 16px;
+            background: rgba(variables.$mainLightColor, 0.6)!important;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-color: rgba(variables.$mainLightColor, 0.4) !important;
+            gap: 16px;
+            button {
+              text-transform: none;
+              flex-basis: 50%;
+              height: 40px !important;
+              border-radius: 4px!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.clear {
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  color: variables.$mainLightColor;
+  text-transform: none;
+  background-color: rgba(variables.$mainLightColor, 0.3);
+  backdrop-filter: none;
+}

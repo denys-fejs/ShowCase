@@ -1,0 +1,35 @@
+@use "src/resources/styles/variables";
+
+.alert {
+  width: 500px;
+  padding: 16px 80px 16px 16px;
+
+  :global {
+    .ant-notification-notice-icon {
+      height: calc(100% - 40px);
+      display: flex;
+      align-items: center;
+    }
+
+    .ant-notification-notice-close {
+      top: 50%;
+      margin-top: -8px;
+    }
+  }
+}
+
+.icon {
+  color: variables.$warningColor;
+}
+
+.okButton {
+  font-size: variables.$fontSizeSm;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  line-height: 16px;
+  color: variables.$primaryColorActive;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

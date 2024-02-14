@@ -1,0 +1,64 @@
+@use "src/resources/styles/variables";
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(variables.$mainLightColor, 0.3);
+  transition: variables.$defaultTransition;
+  backdrop-filter: blur(37px);
+
+  &:hover {
+    box-shadow: 0 12px 24px 0 rgba(163, 242, 238, 0.1);
+    margin-top: -10px;
+  }
+
+  .userTypeIcon {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+
+    span {
+      align-self: center;
+    }
+  }
+}
+
+.contentWrap {
+  height: 55%;
+  border-radius: 0 0 8px 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+  padding: 12px 28px 24px 28px;
+}
+
+.title {
+  font-size: variables.$headline2FontSize;
+  color: variables.$mainDarkColor;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: variables.$subtitle1FontSize;
+  color: variables.$mainDarkColor;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+  line-height: 18px;
+}
+
+.linkLabel {
+  color: variables.$mainLightColor;
+  font-size: variables.$subtitle2FontSize;
+  letter-spacing: 0.1px;
+  font-weight: bold;
+}

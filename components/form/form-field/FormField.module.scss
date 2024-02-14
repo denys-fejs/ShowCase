@@ -1,0 +1,12 @@
+@use 'src/resources/styles/variables';
+
+.formFieldWrapper {
+  display: inline-block;
+  width: 100%;
+
+  .icon {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+  }
+}

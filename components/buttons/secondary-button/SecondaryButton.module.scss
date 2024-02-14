@@ -1,0 +1,39 @@
+@use 'src/resources/styles/variables';
+
+.button {
+  width: auto;
+  height: 40px;
+  padding: 8px 12px;
+  background-color: rgba(variables.$primaryColor, 0.12);
+  backdrop-filter: blur(20px);
+  color: variables.$primaryColor;
+  border: none;
+  border-radius: 4px;
+  font-size: variables.$fontSizeSm;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: rgba(variables.$primaryColor, 0.22);
+    color: variables.$primaryColor;
+  }
+
+  :global(.anticon) {
+    font-size: variables.$fontSizeLg;
+    color: variables.$primaryColor !important;
+  }
+}
+
+.large {
+  height: 48px;
+  background-color: rgba(variables.$primaryColor, 0.24);
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: rgba(variables.$primaryColor, 0.16);
+    color: variables.$primaryColor;
+  }
+}

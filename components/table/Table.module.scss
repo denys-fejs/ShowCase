@@ -1,0 +1,155 @@
+@use 'src/resources/styles/variables';
+.table {
+     :global {
+        .ant-table {
+            background: transparent;
+            border-radius: 4px;
+            min-height: 500px;
+            border-color: rgba(variables.$mainLightColor, 0.3);
+            color: variables.$mainDarkColor;
+            .ant-table-body {
+                overflow-y: initial !important;
+            }
+        }
+        .ant-table-content {
+            position: relative;
+        }
+        .ant-table-tbody {
+            position: relative;
+            top: 8px;
+            width: 673px;
+            .ant-table-row {
+                width: 100%;
+            }
+        }
+        .ant-table-thead {
+            background: rgba(variables.$mainLightColor, 0.3);
+            backdrop-filter: blur(37px);
+            border-radius: 4px;
+            th.ant-table-cell:before {
+                content: none !important;
+            }
+            .ant-table-column-sorter {
+                display: none !important;
+            }
+            th {
+                color: variables.$primaryColor !important;
+                font-size: variables.$subtitle1FontSize;
+                font-weight: bold;
+            }
+            tr {
+                th:first-child {
+                    border-top-left-radius: 4px !important;
+                    border-bottom-left-radius: 4px !important;
+                    span {
+                        display: inline-block;
+                        line-height: 18px;
+                        span {
+                            margin-left: 6px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                th:last-child {
+                    border-top-right-radius: 4px !important;
+                    border-bottom-right-radius: 4px !important;
+                }
+            }
+        }
+        .ant-table-container {
+            border-radius: 4px;
+        }
+        .ant-table-thead>tr>th {
+            background-color: transparent;
+            color: variables.$mainDarkColor;
+            border: none;
+        }
+        .ant-table-tbody {
+            td {
+                background-color: rgba(variables.$mainLightColor, 0.3)!important;
+                padding: 10px 16px;
+            }
+        }
+        .ant-table-row {
+            cursor: pointer;
+        }
+        .ant-table-row:last-child>td {
+            border-color: transparent;
+        }
+        .ant-table-row {
+            &:hover>td {
+                background-color: rgba(variables.$mainLightColor, 0.6) !important;
+            }
+        }
+        tr:first-child {
+            td:first-child {
+                border-top-left-radius: 4px!important;
+            }
+            td:last-child {
+                border-top-right-radius: 4px!important;
+            }
+        }
+        tr:last-child {
+            td:first-child {
+                border-bottom-left-radius: 4px!important;
+            }
+            td:last-child {
+                border-bottom-right-radius: 4px!important;
+            }
+        }
+        .ant-table-placeholder {
+            .ant-empty {
+                padding: 16px;
+                font-size: variables.$fontSizeLg;
+                color: variables.$lightTextColor3;
+            }
+            .ant-empty-image {
+                display: none;
+            }
+            td {
+                border: none;
+            }
+            &:hover>td {
+                background-color: rgba(variables.$lightTextColor, 0.3) !important;
+            }
+        }
+        .ant-pagination-total-text {
+            color: rgba(variables.$lightTextColor, 0.5);
+        }
+        .ant-pagination-item {
+            background-color: transparent;
+            border: none;
+            a {
+                color: rgba(variables.$lightTextColor, 0.5);
+            }
+        }
+        .ant-pagination-item:hover a,
+        .ant-pagination-item-active a {
+            color: variables.$primaryColor;
+        }
+        .ant-pagination-item-link {
+            background-color: transparent;
+            border: none;
+            .anticon {
+                color: variables.$lightTextColor;
+            }
+            &:hover .anticon {
+                color: variables.$primaryColor;
+            }
+        }
+        .ant-pagination-disabled .ant-pagination-item-link {
+            .anticon {
+                cursor: not-allowed;
+                color: rgba(variables.$lightTextColor, 0.5);
+            }
+        }
+    }
+}
+
+.clickable {
+     :global {
+        .ant-table-row:hover {
+            cursor: pointer;
+        }
+    }
+}

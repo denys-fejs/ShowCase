@@ -1,0 +1,67 @@
+@use 'src/resources/styles/variables';
+
+.datePicker {
+  width: 100%;
+  height: 56px;
+  background: rgba(variables.$mainLightColor, 0.3);
+  backdrop-filter: blur(20px);
+  color: variables.$mainDarkColor !important;
+  font-weight: bold !important;
+  border: none;
+  box-shadow: none;
+  border-radius: 6px;
+  padding-left: 16px;
+
+  input {
+    color: variables.$mainDarkColor !important;
+    font-weight: bold !important;
+    font-size: variables.$subtitle2FontSize;
+  }
+  input::placeholder {
+    font-size: variables.$subtitle2FontSize;
+    font-weight: 300;
+    color: rgba(variables.$mainDarkColor, 0.8);
+  }
+
+  &:focus,
+  &:hover {
+    border-color: variables.$primaryColor;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+
+  :global {
+    .ant-picker-suffix {
+      span {
+        color: variables.$primaryColor;
+      }
+    }
+  }
+}
+
+.fieldLabel {
+  color: variables.$mainDarkColor;
+  position: absolute;
+  font-size: variables.$inputLabelSize;
+  top: 8px;
+  left: 16px;
+  z-index: 2;
+}
+
+.borderVisible {
+  border-bottom: 2px solid variables.$primaryColor;
+  border-radius: 4px 4px 0 0;
+
+  input {
+    padding-top: 16px;
+  }
+
+  input::placeholder {
+    color: transparent !important;
+    transition: all 0s;
+  }
+}

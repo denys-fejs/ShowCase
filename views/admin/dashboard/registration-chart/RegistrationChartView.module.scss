@@ -1,0 +1,19 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  margin-bottom: 50px;
+
+  :global {
+
+    .ant-card {
+      background: rgba(variables.$mainLightColor, 0.4) !important;
+    }
+    .ant-card-head {
+      border-color: rgba(variables.$primaryColor, 0.2);
+    }
+  }
+}
+
+.legends {
+  padding: 4px 4px 4px 24px;
+}

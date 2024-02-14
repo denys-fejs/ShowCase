@@ -1,0 +1,59 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 674px;
+  width: 100%;
+  margin: auto;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.mainTitle,
+.descriptionTitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.descriptionTitle {
+  margin-bottom: 24px !important;
+}
+
+.locationTitle {
+  font-weight: 300;
+  font-size: variables.$subtitle1FontSize;
+  line-height: 15px;
+  letter-spacing: 0.1px;
+  font-family: "BreakersSlabW00 Light", serif;
+  color: variables.$mainDarkColor;
+  margin-left: 8px;
+}
+
+.locationFlag {
+  width: 24px;
+  height: 24px;
+}
+
+.adressWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.descriptionText {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: variables.$mainDarkColor;
+  text-align: left;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

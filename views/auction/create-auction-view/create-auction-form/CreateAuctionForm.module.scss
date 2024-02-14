@@ -1,0 +1,73 @@
+@use "src/resources/styles/variables";
+.formContainer {
+    width: 480px;
+    margin: auto;
+    .question {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: variables.$primaryColor;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 78px;
+}
+
+.buttonsContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    z-index: 1;
+    &::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 150vw;
+        top: 0;
+        left: -25%;
+        position: absolute;
+        background-color: variables.$darkLabelBgColor;
+        z-index: 0;
+    }
+}
+
+.actionButtonWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .btn {
+        width: 180px;
+    }
+}
+
+.approveBtn {
+    width: 180px !important;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.loadingModal {
+     :global {
+        .ant-modal-body {
+            padding: 50px;
+            text-align: center;
+        }
+    }
+}
+
+.loader {
+    margin: 20px 0 10px 0;
+}
+
+.loadingTitle {
+    padding-bottom: 20px;
+}

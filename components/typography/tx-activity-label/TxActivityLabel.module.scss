@@ -1,0 +1,28 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  font-size: variables.$fontSizeSm;
+  font-weight: 300;
+  color: variables.$lightTextColor;
+}
+
+.receive {
+  color: variables.$successColor;
+}
+
+.send,
+.transferBridge,
+.burn,
+.sendToken,
+.deposit   {
+  color: variables.$warningColor;
+}
+
+.mint,
+.mintToken,
+.registerProject,
+.registerCompany,
+.withdraw,
+.approve {
+  color: variables.$primaryColor;
+}

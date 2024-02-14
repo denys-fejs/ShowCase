@@ -1,0 +1,17 @@
+@use "src/resources/styles/variables";
+
+.showMoreMyPurchases {
+  background: rgba(16, 24, 32, 0.06);
+
+  span {
+    font-family: "Breakers Slab W00", serif !important;
+    font-weight: bold;
+    color: variables.$mainDarkColor;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: rgba(16, 24, 32, 0.06);
+  }
+}

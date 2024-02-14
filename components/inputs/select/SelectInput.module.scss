@@ -1,0 +1,133 @@
+@use 'src/resources/styles/variables';
+
+.container {
+  :global(.ant-form-item-explain) {
+    margin: 4px;
+  }
+}
+
+.tooltip {
+  :global {
+    .ant-tooltip-inner {
+      background-color: rgba(variables.$darkBgColor, 0.6);
+    }
+  }
+}
+
+.select {
+  color: variables.$mainDarkColor;
+  font-weight: 300;
+  border: none;
+  box-shadow: none;
+
+  :global {
+    .ant-select-selector {
+      background-color: variables.$inputBgColor !important;
+      height: auto !important;
+      border-radius: 4px !important;
+      box-shadow: none !important;
+    }
+
+    .ant-select-clear {
+      right: 30px;
+      background: transparent;
+      height: 16px;
+      width: 16px;
+      top: 45%;
+    }
+
+    .ant-select-arrow {
+      display: block;
+      font-size: 24px !important;
+      width: 16px;
+      height: 16px;
+      margin-left: -4px;
+      pointer-events: none !important;
+    }
+  }
+}
+
+.middle {
+  input {
+    font-size: variables.$fontSizeMd;
+  }
+
+  :global {
+    .ant-select-selector {
+      height: auto !important;
+      padding: 14px 16px !important;
+      font-size: variables.$fontSizeMd;
+    }
+
+    .ant-select-selection-search input {
+      height: auto !important;
+      font-size: variables.$fontSizeMd;
+      padding: 16px 4px !important;
+    }
+
+    .ant-input-prefix {
+      width: 24px;
+      justify-content: center;
+      font-size: variables.$fontSizeXl;
+      margin-right: 12px;
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.fieldLabel {
+  color: variables.$mainDarkColor;
+  position: absolute;
+  font-size: variables.$inputLabelSize;
+  top: 8px;
+  left: 16px;
+  z-index: 2;
+}
+
+.flag {
+  width: 24px;
+  height: 24px;
+  margin-right: 9px;
+}
+
+:global(.ant-select-item-option-content) {
+  display: flex;
+  align-items: center;
+}
+
+.standardField {
+  backdrop-filter: blur(20px);
+  border-radius: 4px;
+
+  .arrow {
+    svg {
+      fill: variables.$primaryColor;
+    }
+  }
+
+  :global {
+    .ant-select-selection-placeholder {
+      color: rgba(variables.$mainDarkColor, 0.8) !important;
+    }
+    .ant-select-selection-item {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.borderVisible.standardField {
+  border-bottom: 2px solid variables.$primaryColor;
+  border-radius: 4px 4px 0 0;
+
+  :global(.ant-select-selector) {
+    padding: 24px 16px 8px 16px !important;
+    border-radius: 4px 4px 0 0!important;
+    font-weight: bold;
+  }
+}

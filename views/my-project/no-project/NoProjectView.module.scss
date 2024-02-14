@@ -1,0 +1,19 @@
+@use "src/resources/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.button {
+  width: 230px;
+}

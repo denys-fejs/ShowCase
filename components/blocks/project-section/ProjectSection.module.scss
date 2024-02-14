@@ -1,0 +1,54 @@
+@use "src/resources/styles/variables";
+
+.projectSectionHeader {
+  height: 72px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .projectSectionTitle {
+    text-align: left;
+    margin: 0;
+    color: variables.$mainDarkColor;
+    font-size: variables.$fontSizeLg;
+    font-family: "Breakers Slab W00", serif !important;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+  .whiteSectionTitle {
+    color: variables.$mainLightColor;
+  }
+}
+
+.projectsList {
+  width: 100%;
+  margin: 24px 0 26px;
+}
+
+.sortingContainer {
+  display: flex;
+
+  .sortingLabel {
+    color: rgba(variables.$lightTextColor, 0.6);
+    line-height: 50px;
+  }
+}
+
+.noProjectsPlaceholder {
+  width: 350px;
+  margin: 50px auto 0;
+  text-align: center;
+
+  h3 {
+    color: variables.$mainDarkColor;
+    font-size: variables.$headline4FontSize;
+    font-weight: 300;
+    font-family: "Breakers Slab W00", serif!important;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: variables.$subtitle1FontSize;
+  }
+}

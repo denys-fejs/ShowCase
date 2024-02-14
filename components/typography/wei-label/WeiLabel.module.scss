@@ -1,0 +1,8 @@
+@use "src/resources/styles/variables";
+
+.label {
+  color: variables.$mainDarkColor;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: rgba(variables.$primaryColor, 0.15);
+}

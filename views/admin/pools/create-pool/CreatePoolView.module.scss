@@ -1,0 +1,16 @@
+@use "src/resources/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  flex: 0;
+}
+
+.content {
+  flex: 1;
+}

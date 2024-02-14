@@ -1,0 +1,44 @@
+@use "src/resources/styles/variables";
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.profileIcon {
+  margin: 20px;
+  img {
+    opacity: 0.2;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.userInfo {
+  margin: 30px 0;
+
+  :global {
+    .ant-input-affix-wrapper-disabled,
+    .ant-input[disabled] {
+      cursor: default;
+      opacity: 1 !important;
+    }
+  }
+}
+
+.copyButton {
+  margin-top: -12px;
+
+  img {
+    height: 24px;
+    width: 18px;
+  }
+}
+
+.divider {
+  border-color: rgba(variables.$borderColor, 0.3) !important;
+}
+
+.form {
+  margin-top: 24px;
+}

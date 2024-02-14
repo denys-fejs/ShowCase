@@ -1,0 +1,27 @@
+@use 'src/resources/styles/variables';
+
+.detailsSectionContainer {
+  max-width: 674px;
+  width: 100%;
+  margin-bottom: 25px;
+
+  .header {
+    height: 40px;
+    color: variables.$mainDarkColor;
+    font-size: variables.$headline2FontSize;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.placeholder {
+  font-size: variables.$fontSizeMd;
+  color: variables.$mainDarkColor;
+}

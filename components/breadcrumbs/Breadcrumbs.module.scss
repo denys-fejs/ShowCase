@@ -1,0 +1,30 @@
+@use 'src/resources/styles/variables';
+
+.breadcrumbsContainer {
+  margin: 32px 0 16px 0;
+}
+
+.breadcrumbs {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(variables.$mainDarkColor, 0.1);
+  border-radius: 4px;
+  backdrop-filter: blur(40px);
+
+  .route,
+  .route + span,
+  a {
+    color: variables.$mainLightColor !important;
+    font-size: variables.$fontSizeMd;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+
+  a {
+    color: variables.$primaryColor !important;
+    font-size: variables.$fontSizeMd;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+}

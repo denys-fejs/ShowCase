@@ -1,0 +1,31 @@
+@use "src/resources/styles/variables";
+
+.sectionDivider {
+  margin: 20px 0 10px 0 !important;
+}
+
+.rejectedContainer {
+  padding: 16px;
+  border-radius: 8px;
+  background: variables.$mainLightColor;
+  box-shadow: 0 6px 36px rgba(16, 24, 32, 0.06);
+  margin-bottom: 10px;
+
+  .rejectionTitle {
+    color: variables.$mainDarkColor;
+    font-size: variables.$biggerFontSize;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+  .rejectionContent {
+    color: variables.$mainDarkColor;
+    font-size: variables.$fontSizeSm;
+    line-height: 20px;
+    margin: 10px 0 20px 0;
+  }
+}
+
+.hidden {
+  display: none;
+}

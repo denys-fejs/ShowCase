@@ -1,0 +1,140 @@
+@use "src/resources/styles/variables";
+
+.container {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.labelWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: variables.$lightTextColor;
+  margin-bottom: 16px;
+  font-size: variables.$fontSizeLg;
+  font-weight: bold;
+}
+
+.addButton {
+  color: variables.$primaryColor;
+  font-size: variables.$fontSizeSm;
+  height: 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.addButtonIcon {
+  display: inline-block;
+  font-size: variables.$fontSizeXs;
+  margin-right: 10px;
+  padding-bottom: 3px;
+  vertical-align: middle;
+
+  :global(.anticon) {
+    color: variables.$primaryColor;
+  }
+}
+
+.dropWrapper {
+  width: 100%;
+  background: transparent !important;
+  border: 2px dashed rgba(variables.$mainLightColor, 0.6) !important;
+  border-radius: 8px !important;
+  padding: 10px;
+
+  :global(.ant-upload) {
+    padding: 0 !important;
+  }
+}
+
+.uploadWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+.placeholder {
+  color: rgba(variables.$lightTextColor, 0.8);
+  font-size: variables.$fontSizeSm;
+  text-align: center;
+  padding: 8px;
+  font-weight: 300;
+}
+
+.button {
+  margin: 8px 0;
+  min-width: 132px;
+  width: auto !important;
+  box-shadow: none !important;
+}
+
+.previewImage {
+  img {
+    width: 100%;
+  }
+}
+
+.fileItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(variables.$lightTextColor, 0.12);
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: default;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fileItemTitle {
+  display: flex;
+  color: rgba(variables.$lightTextColor, 0.8);
+
+  :global(.anticon) {
+    font-size: variables.$fontSizeLg;
+    color: rgba(variables.$lightTextColor, 0.5);
+    margin-right: 8px;
+    cursor: default;
+
+    &:hover {
+      color: rgba(variables.$lightTextColor, 0.5);
+    }
+  }
+}
+
+.fileItemError {
+  padding: 0 6px;
+  color: variables.$errorColor;
+}
+
+.fileItemRemove {
+  :global(.anticon) {
+    font-size: variables.$fontSizeMd;
+    color: rgba(variables.$lightTextColor, 0.5);
+
+    &:hover {
+      color: rgba(variables.$lightTextColor, 0.8);
+    }
+  }
+}
+
+input[accept=".png,.jpg,.jpeg"] ~ :global(.ant-upload-drag-container) {
+  .uploadWrapper {
+    .placeholder {
+      color: variables.$mainDarkColor!important;
+    }
+  }
+}
+
+.blackLabel {
+  color: variables.$mainDarkColor;
+}

@@ -1,0 +1,57 @@
+@use 'src/resources/styles/variables';
+
+.contactsDataRow {
+  display: flex;
+  height: 72px;
+  width: 100%;
+
+  .icon {
+    margin: 24px 32px 24px 0;
+    img {
+      // makes svg green
+      filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+    }
+  }
+
+  .contactsData {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    border-bottom: 1px solid variables.$inputBgColor;
+
+    .padding {
+      padding: 13px 0;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 0;
+      color: rgba(variables.$mainDarkColor, 0.6);
+
+      font-size: variables.$fontSizeSm;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      line-height: 20px;
+    }
+
+    .data {
+      display: block;
+      color: variables.$mainDarkColor;
+      font-weight: bold;
+      font-size: variables.$subtitle1FontSize;
+      letter-spacing: 0.5px;
+      line-height: 24px;
+    }
+  }
+
+  .download {
+    align-self: flex-end;
+    margin: 24px 0;
+
+    img {
+      // makes svg green
+      filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+    }
+  }
+}

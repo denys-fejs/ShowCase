@@ -1,0 +1,85 @@
+@use "src/resources/styles/variables";
+
+.emissionsBar {
+  margin: 0 auto;
+  width: 620px;
+
+  .emissionsValues {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+    .emissionsItem {
+      height: 48px;
+      margin: 12px 0 36px;
+      padding: 0 24px 0 56px;
+      border-right: 1px solid rgba(variables.$mainDarkColor, 0.16);
+      position: relative;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        border: 2px solid variables.$primaryColor;
+        border-radius: 50%;
+        padding: 2px;
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: variables.$primaryColor;
+        position: absolute;
+        left: 28px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .burned {
+      &:before {
+        border-color: variables.$yellowBurnedColor;
+      }
+      &:after {
+        background-color: variables.$yellowBurnedColor;
+      }
+    }
+
+    .planed {
+      &:before {
+        border-color: variables.$grayPlanedColor;
+      }
+      &:after {
+        background-color: variables.$grayPlanedColor;
+      }
+    }
+  }
+}
+:global(.ant-progress-inner) {
+  background-color: variables.$grayPlanedColor;
+  border-radius: 2px!important;
+  height: 4px!important;
+}
+:global(.ant-progress-bg) {
+  background-color: variables.$yellowBurnedColor;
+  border-radius: 2px!important;
+  height: 4px!important;
+}
+
+:global(.ant-progress-success-bg) {
+  background-color: variables.$primaryColor;
+  border-radius: 2px!important;
+  height: 4px!important;
+}

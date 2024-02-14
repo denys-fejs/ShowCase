@@ -1,0 +1,43 @@
+@use 'src/resources/styles/variables';
+
+.divider {
+  font-size: variables.$fontSizeMd !important;
+  color: rgba(variables.$lightTextColor, 0.6) !important;
+  border-color: rgba(variables.$lightTextColor, 0.6) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  &::after {
+    border-color: rgba(variables.$lightTextColor, 0.6) !important;
+  }
+
+  &:global(.ant-divider-with-text-left) {
+    &::before {
+      display: none;
+    }
+    :global(.ant-divider-inner-text) {
+      padding-left: 0 !important;
+    }
+  }
+}
+
+.grey {
+  border-color: variables.$lightTextColor !important;
+  opacity: 0.2;
+}
+
+.dark {
+  border-color: variables.$darkBgColor !important;
+}
+
+.secondary {
+  border-color: #414141 !important;
+}
+
+.lightGrey {
+  border-color: variables.$mainDarkColor !important;
+  opacity: 0.16;
+}
+
+.white {
+  border-color: variables.$mainLightColor !important;
+}

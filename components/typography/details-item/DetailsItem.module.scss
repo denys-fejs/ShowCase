@@ -1,0 +1,19 @@
+@use "src/resources/styles/variables";
+
+.title {
+  display: block;
+  color: rgba(variables.$mainDarkColor,0.6);
+  font-size: variables.$fontSizeSm;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+.value {
+  display: block;
+  text-align: center;
+  color: variables.$mainDarkColor;
+  font-size: variables.$subtitle1FontSize;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}

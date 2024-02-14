@@ -1,0 +1,52 @@
+@use "src/resources/styles/variables";
+
+.documentDownload {
+  z-index: 2;
+  display: flex;
+  gap: 16px;
+  align-content: center;
+  align-items: center;
+  color: variables.$mainDarkColor;
+
+  img {
+    // makes svg green
+    filter: invert(65%) sepia(39%) saturate(359%) hue-rotate(121deg) brightness(97%) contrast(89%);
+  }
+
+  &:hover {
+    color: variables.$primaryColor;
+  }
+}
+
+.title {
+  margin: 10px 0 4px 0 ;
+}
+
+.table {
+  margin-top: 24px;
+
+  :global {
+    .ant-table-tbody {
+      font-weight: 300;
+
+      .ant-table-cell {
+        padding: 14px 16px;
+      }
+    }
+  }
+}
+
+.nameCell {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  .image {
+    background: no-repeat;
+    background-size: cover;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+}

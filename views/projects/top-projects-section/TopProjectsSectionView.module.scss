@@ -1,0 +1,17 @@
+@use 'src/resources/styles/variables';
+
+.projectList {
+  margin: 24px 0 26px;
+}
+
+.empty {
+  width: 532px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-family: "Breakers Slab W00", serif !important;
+  font-size: variables.$headline2FontSize;
+  font-weight: 700;
+}

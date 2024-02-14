@@ -1,0 +1,17 @@
+@use "src/resources/styles/variables";
+
+.tickerSuggestion {
+  font-size: variables.$fontSizeXs;
+  color: variables.$lightTextColor4;
+}
+
+.button {
+  margin-left: 4px;
+  color: variables.$primaryColor;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    color: variables.$primaryColorActive;
+  }
+}

@@ -1,0 +1,17 @@
+@use "src/resources/styles/variables";
+
+.preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  padding: 6px 0;
+  font-size: variables.$fontSizeLg;
+  color: variables.$lightTextColor;
+}
+
+.card {
+  width: 250px;
+}
